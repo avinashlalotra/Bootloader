@@ -4,7 +4,7 @@ size = 2880
 
 .PHONY: assemble setup run
 
-assemble: $(bootloader)
+assemble: $(bootloader) print_string.asm
 	@echo "Assembling bootloader..."
 	nasm -f bin -o bootloader.bin $(bootloader)
 
