@@ -1,4 +1,3 @@
-od -t x1 -A n boot_sect.bin 
 
 ## Bootloader Project
 
@@ -27,13 +26,13 @@ This project is a simple bootloader that demonstrates the basics of boot sector 
 - A basic understanding of assembly language
 
 # Directory Structure
-
+```
 /bootloader
 │
 ├── boot.asm          # Main bootloader code
 ├── print_string.asm  # Function to print null-terminated strings
 └── Makefile          # Build script
-
+```
 # Building the Bootloader
 
 1. Clone the repository or download the source files.
@@ -51,6 +50,10 @@ This project is a simple bootloader that demonstrates the basics of boot sector 
 
 - The bootloader must be exactly 512 bytes in size. If your code exceeds this size, you will need to adjust it accordingly.
 
+``` 
+   use the below command to verify the last bytes
+   od -t x1 -A n bootloader.bin 
+```
 # License
 
 This project is licensed under the MIT License 
